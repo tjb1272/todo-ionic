@@ -8,7 +8,7 @@ import {ItemDetailPage} from "../item-detail/item-detail";
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
 })
 export class HomePage {
   currentItems: Item[];
@@ -28,7 +28,7 @@ export class HomePage {
   }
 
   deleteItem(item: Item) {
-    this.items.delete(item);
+    this.items.delete(item).subscribe();
   }
 
   openItem(item: Item) {

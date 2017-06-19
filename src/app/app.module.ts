@@ -10,12 +10,14 @@ import {Items} from "../providers/items";
 import {HttpModule} from "@angular/http";
 import {Api} from "../providers/api";
 import {ItemCreatePage} from "../pages/item-create/item-create";
+import {ItemDetailPage} from "../pages/item-detail/item-detail";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ItemCreatePage
+    ItemCreatePage,
+    ItemDetailPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import {ItemCreatePage} from "../pages/item-create/item-create";
   entryComponents: [
     MyApp,
     HomePage,
-    ItemCreatePage
+    ItemCreatePage,
+    ItemDetailPage
   ],
   providers: [
     StatusBar,
