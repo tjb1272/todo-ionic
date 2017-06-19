@@ -28,7 +28,8 @@ export class HomePage {
   }
 
   deleteItem(item: Item) {
-    this.items.delete(item).subscribe();
+    this.items.delete(item);
+    this.currentItems.splice(this.currentItems.indexOf(item), 1);
   }
 
   openItem(item: Item) {
